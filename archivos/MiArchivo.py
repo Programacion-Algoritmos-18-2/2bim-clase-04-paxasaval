@@ -11,7 +11,7 @@ class ReadFichero:
 	Inicialisamos la clase abriendo el archivo en la ubicacion establecidad
 	"""
 	def __init__(self):
-		self.archivo=codecs.open("archivos\informacion.csv", "r")#Usamos open para abrir el fichero(ruta, y r para leer (read)
+		self.archivo=codecs.open("archivos\informacion.csv", "r") # Usamos open para abrir el fichero(ruta, y r para leer (read)
 
 	"""
 	Obtenemos la informacion del fichero y cada linea sera una posicion de un arreglo
@@ -31,7 +31,7 @@ class WriteFichero:
 	Inicializamos la clase abriendo el archivo en la ruta deseada, en caso de no existir lo creamos
 	"""
 	def __init__(self):
-		self.archivo = codecs.open("archivos/info_ordenada.csv", "w")#Usamos open para abrir el fichero(ruta, y a para agregar al final del fichero (add)
+		self.archivo = codecs.open("archivos/info_ordenada.csv", "w") # Usamos open para abrir el fichero(ruta, y a para agregar al final del fichero (add)
 		self.archivo.write("%s|%s|%s|%s\n"%("Nombre del Equipo","Ciudad","Campeonatos","Numero de Jugadores"))
 	
 	"""
@@ -44,4 +44,4 @@ class WriteFichero:
 	"""
 	def cerrar_archivo(self):
 		self.archivo.close()
-		print("\n\t***Fichero 2 Actualizado****\n")#mensaje que indica que se guardo el fichero
+		print("\n\t***Fichero 2 Actualizado****\n") # mensaje que indica que se guardo el fichero

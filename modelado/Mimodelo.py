@@ -5,7 +5,9 @@ class Equipo(object):
 		self.ciudad=ciudad
 		self.campeonatos=int(campeonatos)
 		self.numJugadores=int(numJugadores)
-	#Creamos los metodos GET y SET para cada atributo
+	"""
+	Creamos los metodos GET y SET para cada atributo
+	"""
 	def setNombre(self,nombre):
 		self.nombre=nombre
 	def getNombre(self):
@@ -25,8 +27,9 @@ class Equipo(object):
 		self.numJugadores=int(numJugadores)
 	def getNumJugadores(self):
 		return self.numJugadores
-
-	#Metodo __str__ y __repr__ para personalziar al rpesentacion de nuestro objeto
+	"""
+	Metodo __str__ y __repr__ para personalziar al rpesentacion de nuestro objeto
+	"""
 	def __str__(self):
 		cadena="Nombre: %s|Ciudad: %s|Partidos Ganados: %d|Partidos Jugados: %d\n"%(self.nombre,self.ciudad,self.campeonatos,self.numJugadores)
 		return cadena
